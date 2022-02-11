@@ -49,7 +49,7 @@ export default function Quiz(props: {
       )}
       {props.showResult && (
         <div className="result-container">
-          <p>You got {totalCorrectAnswers()} rigth answers! </p>
+          <p>You got {totalCorrectAnswers()} right answers! </p>
           <button
             onClick={() => props.triggerNewGame()}
             type="button"
