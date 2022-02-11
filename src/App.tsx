@@ -118,7 +118,7 @@ function App() {
     if (!showIntro) {
       axios
         .get(
-          "https://opentdb.com/api.php?amount=5&category=20&type=multiple&encode=url3986"
+          "https://opentdb.com/api.php?amount=5&type=multiple&encode=url3986"
         )
         .then((response) => {
           setQuestions(parseQuestionsData(response.data.results));
